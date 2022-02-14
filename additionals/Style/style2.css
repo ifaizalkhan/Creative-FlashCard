@@ -1,0 +1,131 @@
+
+@media only screen and (min-width: 768px) and (max-width: 950px){
+
+    .main-dummy{
+        width: 469px;
+    }
+
+    .first-inner-container{
+        width: 360px;
+    }
+
+    .list-card{
+        width: 77%;
+    }
+
+    .progress-bar{
+        width: 77%;
+    }
+
+    .color-highlight:hover{
+        border:none;
+    }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 767px){
+
+    .main-dummy{
+        width: 245px;
+    }
+
+    .color-selection{
+        width: 80px;
+    }
+
+    .first-inner-container{
+        width: 100%;
+    }
+
+    .list-card{
+        width: 55%;
+        padding: 20px 15px;
+    }
+
+    .progress-bar{
+        width: 55%;
+    }
+
+    .color-highlight:hover{
+        border:none;
+    }
+    
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 424px){
+
+    *{
+        font-size: 12px;
+    }
+    .main-container{
+        padding: 30px 20px;
+        /* padding:40px 5px 40px 20px; */
+    }
+    .main-dummy{
+        width: 100%;
+    }
+    .main-side-container{
+        padding: 30px 20px;
+    }
+
+    .main-side-container  input{
+        padding: 5px;
+    }
+
+    .main-side-container  h3{
+        margin: 0;
+    }
+
+    .title-label{
+        margin: 0;
+    }
+
+    .color-selection{
+        width: 100%;
+        justify-content: space-between;
+        gap: 8px
+    }
+
+    .first-inner-container{
+        width: 100%;
+        justify-content: normal;
+        flex-direction: column;
+    }
+
+    .first-inner-container input{
+        width: 100%;
+        /* flex-direction: column; */
+    }
+
+    .list-card{
+        /* width: 200px;
+        height: 100px; */
+        width: 100%;
+        padding: 20px 15px;
+    }
+    .counter-record{
+        margin: 5px 0px 10px 0px;
+    }
+
+    .progress{
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .progress-bar{
+        width: 100%;
+    }
+    h2{
+        font-size: 15px;
+    }
+    label, h3{
+        font-size: 12px;
+    }
+    #add-button{
+        margin: auto;
+    }
+
+    .color-highlight:hover{
+        border:none;
+    }
+}

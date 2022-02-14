@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="./additionals/Style/style1.css" />
+    <link rel="stylesheet" href="./additionals/Style/style2.css" />
+    <link rel="shortcut icon" href="./additionals/Icons/icon.png" type="image/x-icon">
+    <title>Creative FlashCard</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <h2 style="text-align: center; font-family: 'Permanent Marker', cursive;">Creative FlashCard</h2>
+    </div>
+    <div id="bg">
+        <div class="main-container">
+            <div class="main-dummy">
+                <h2>Filter By :</h2>
+                <div style="margin-left: 6x;margin: 8px 0  35px 18px;">
+                    <ul>
+                        <li> <span style="font-weight: 900;"> Color: </span> To view all cards of desired colour.</li>
+                        <li> <span style="font-weight: 900;"> Title or SubTitle: </span> To view all cards with desired
+                            Title/SubTitle </li>
+                        <li> <span style="font-weight: 900;"> Both: </span> To view all cards with desired Title of
+                            desired colour.</li>
+                    </ul>
+                </div>
+                <h2>Choose to Filter:</h2>
+                <div class="first-inner-container">
+                    <div class="color-palette">
+                        <h3>Color:</h3>
+                        <div class="color-selection" style="position: relative;">
+                            <div id="bb" title="Click Disabled"></div>
+                            <div class="color-highlight">
+                                <div class="color-bar" id="1" onclick="showChanges(id)"></div>
+                            </div>
+                            <div class="color-highlight">
+                                <div class="color-bar" id="2" onclick="showChanges(id)"></div>
+                            </div>
+                            <div class="color-highlight">
+                                <div class="color-bar" id="3" onclick="showChanges(id)"></div>
+                            </div>
+                            <div class="color-highlight">
+                                <div class="color-bar" id="4" onclick="showChanges(id)"></div>
+                            </div>
+                            <div class="color-highlight">
+                                <div class="color-bar" id="5" onclick="showChanges(id)"></div>
+                            </div>
+                            <div class="color-highlight">
+                                <div class="color-bar" id="6" onclick="showChanges(id)"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <!-- <div class="bb" title="Click Disabled"></div> -->
+                        <h3>Title/Subtitle</h3>
+                        <input id="searchInput" type="text" onkeyup="handleOnChange(event)"
+                            placeholder="Search across title and subtitle">
+                    </div>
+
+                </div>
+                <div class="second-inner-container">
+                    <div class="progress">
+                        <div class="progress-bar">
+                            <div class="progress-child"
+                                style="border-bottom-left-radius: 4px; border-top-left-radius: 4px;">
+                            </div>
+                            <div class="progress-child"></div>
+                            <div class="progress-child"></div>
+                            <div class="progress-child"></div>
+                            <div class="progress-child"
+                                style="border-bottom-right-radius: 4px; border-top-right-radius: 4px;">
+                            </div>
+                        </div>
+                        <span class="counter-record"><span id="counter"> 0 </span><span> / 5 Creatives</span></span>
+                    </div>
+                    <button id="add-button" onclick="changeProgress()">+ Add Creative</button>
+                </div>
+                <div id="results">
+
+                </div>
+                <div id="results1">
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="main-side-container">
+            <div class="side-container">
+                <div class="headerLine">
+                    <h2>Creative Creation</h2>
+                    <i class="fas fa-times closed" title="Close" onClick="justCloseIt()"></i>
+                </div>
+                <div style="margin-left: 6x;margin: 8px 0  0px 18px;">
+                    <ul>
+                        <li>Add a <span style="font-weight: 900;">Title to</span> your FlashCard.</li>
+                        <li>Add a <span style="font-weight: 900;">Sub-Title</span> and <span style="font-weight: 900;">Colour</span> to your FlashCard.</li>
+                        <li>Click on <span style="font-weight: 900;">Done</span> Button to show preview.</li>
+                    </ul>
+                </div>
+                <form onsubmit="return false" id="my-form">
+                    <div class="title-label">
+                        <label for="title">
+                            <h3>Title</h3>
+                        </label>
+                        <input type="text" placeholder="This is a title" id="title" name="fname" required /> <br>
+                    </div>
+                    <div>
+                        <label for="sub-title">
+                            <h3>Sub-Title</h3>
+                        </label>
+                        <input type="text" placeholder="This is a subtitle" id="sub-title" name="fhname" required />
+                    </div>
+                    <div class="color-palette">
+                        <h3>Background Color:</h3>
+                        <div class="color-selection">
+                            <div class="color-highlight">
+                                <div class="color-bar" id="7" onclick="showChanges(id)"></div>
+                            </div>
+                            <div class="color-highlight">
+                                <div class="color-bar" id="8" onclick="showChanges(id)"></div>
+                            </div>
+                            <div class="color-highlight">
+                                <div class="color-bar" id="9" onclick="showChanges(id)"></div>
+                            </div>
+                            <div class="color-highlight">
+                                <div class="color-bar" id="10" onclick="showChanges(id)"></div>
+                            </div>
+                            <div class="color-highlight">
+                                <div class="color-bar" id="11" onclick="showChanges(id)"></div>
+                            </div>
+                            <div class="color-highlight">
+                                <div class="color-bar" id="12" onclick="showChanges(id)"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="submitButton" value="Done" title="Click to Preview" onclick="validate()">Done</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./additionals/Script/script.js"></script>
+
+</html>
