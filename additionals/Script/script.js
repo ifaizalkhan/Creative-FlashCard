@@ -253,7 +253,6 @@ function colorMatches(colorToMatch, ca) {
 }
 let q = document.getElementById("results");
 function addCreativeToDom(arr) {
-    
     q.innerHTML = "";
     for (let s = 0; s < arr.length; s++) {
         let bob = document.createElement('div');
@@ -264,3 +263,10 @@ function addCreativeToDom(arr) {
     }
 }
 
+document.onkeydown = function(evt) {
+    evt = evt || window.event;
+    if (evt.key == "Escape" && getComputedStyle(msc).display === "flex") {
+        console.log("Inside");
+        justCloseIt();
+    }
+};
