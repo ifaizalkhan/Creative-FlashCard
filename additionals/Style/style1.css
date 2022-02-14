@@ -13,7 +13,7 @@ html, body{
 
 #bg{
     display: flex;
-    height: 730px;
+    height: 100%;
 }
 
 #bb{
